@@ -28,6 +28,8 @@ body {
 }
 
 header {
+    position: absolute;
+    width: 100%;
     background-color: #181818;
     padding: 24px 0;
 }
@@ -115,10 +117,16 @@ header nav ul li:last-of-type a:focus {
 }
 
 .intro_info {
-    padding-top: 461px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
     text-align: center;
+    padding-bottom: 71px;
+}
+
+.intro_container {
     max-width: 580px;
-    margin: auto;
 }
 
 .intro_subtitle {
@@ -180,6 +188,46 @@ header nav ul li:last-of-type a:focus {
     margin-right: 5px;
 }
 
+.example {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+.example_fuji {
+    background-image: url('../images/example_fuji.jpg');
+}
+
+.example_monstera {
+    background-image: url('../images/example_monstera.jpg');
+}
+
+.example_himalayas {
+    background-image: url('../images/example_himalayas.jpg');
+}
+
+.example_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.example_text {
+    max-width: 300px;
+    margin-right: 87px;
+}
+
+.example_title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.example_description {
+    color: #C0C0C0;
+}
+
 .clients {
     background-color: #000000;
     padding-top: 113px;
@@ -193,11 +241,10 @@ header nav ul li:last-of-type a:focus {
     margin-bottom: 15px;
 }
 
-.clients_description {
+.description {
     font-size: 24px;
     line-height: 30px;
     color: #C0C0C0;
-    margin-bottom: 82px;
 }
 
 .clients_scroll {
@@ -206,8 +253,57 @@ header nav ul li:last-of-type a:focus {
     align-items: center;
     padding-left: 62px;
     padding-right: 62px;
+    margin-top: 82px;
 }
 
 .clients_links {
     display: inline-block;
+    max-width: 128px;
+}
+
+.clients_links img {
+    display: block;
+    width: 100%;
+}
+
+.more {
+    padding-top: 113px;
+    padding-bottom: 108px;
+    background-color: #000000;
+}
+
+.more_title {
+    display: inline-block;
+    max-width: 600px;
+}
+
+.more_button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    padding-right: 10px;
+    margin-top: 22px;
+    transition: 0.5s;
+}
+
+.more_button::before {
+    content: "";
+    display: block;
+    background-image: url('../images/more_button.svg');
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+}
+
+.more_button:hover {
+    transform: scale(1.2);
+}
+
+.more_button:focus {
+    background-color: #C0C0C0;
 }

@@ -193,6 +193,9 @@ header nav ul li:last-of-type a:focus {
     background-position: center;
     background-size: cover;
     height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .example_fuji {
@@ -205,13 +208,6 @@ header nav ul li:last-of-type a:focus {
 
 .example_himalayas {
     background-image: url('../images/example_himalayas.jpg');
-}
-
-.example_container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
 }
 
 .example_text {

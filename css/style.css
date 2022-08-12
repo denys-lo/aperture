@@ -321,7 +321,7 @@ header nav ul li:last-of-type a:focus {
     flex-wrap: wrap;
 }
 
-.what_we_do .item {
+.card {
     max-width: 576px;
     max-height: 600px;
     overflow: hidden;
@@ -329,12 +329,12 @@ header nav ul li:last-of-type a:focus {
     padding: 8px;
 }
 
-.what_we_do .item img {
+.card img {
     display: block;
     width: 100%;
 }
 
-.what_we_do .content {
+.card .content {
     position: absolute;
     padding: 30px;
     width: 100%;
@@ -351,6 +351,135 @@ header nav ul li:last-of-type a:focus {
     color: #C0C0C0;
 }
 
-.what_we_do .content .button {
+.card .content .button {
     font-size: 15px;
+}
+
+footer {
+    background-color: #000000;
+    padding: 100px 16px;
+}
+
+.pagination {
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+}
+
+.pagination .column_left .logo {
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.pagination .column_left .slogan {
+    font-size: 13px;
+    color: #C0C0C0;
+}
+
+.business_areas {
+    margin-right: 55px;
+}
+
+.pagination .column_right h4 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+.pagination .column_right li {
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.pagination .column_right ul li a {
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.pagination .column_right li:hover {
+    transform: scale(1.2);
+}
+
+.pagination .column_right ul li a:focus {
+    color: #C0C0C0;
+}
+
+.subscribe {
+    padding-bottom: 40px;
+    border-bottom: 2px solid #FFFFFF;
+    margin-bottom: 56px;
+}
+
+.subscribe.d_flex {
+    align-items: center;
+}
+
+.subscribe .subject h4 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.subscribe .subject p {
+    font-size: 13px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+.subscribe_from {
+    width: 100%;
+    max-width: 458px;
+}
+
+.subscribe .subscribe_from label {
+    display: none;
+}
+
+.subscribe .subscribe_from form {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #F9FAFB;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe .subscribe_from form input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.subscribe .subscribe_from form input:focus {
+    outline: none;
+}
+
+.subscribe .subscribe_from form button {
+    width: 63px;
+    height: 30px;
+    background: #000000;
+    border-radius: 11px;
+    margin-right: 6px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.copyright_social {
+    align-items: center;
+}
+
+.copyright {
+    color: #C0C0C0;
+}
+
+.social li {
+    padding-left: 20px;
+}
+
+.social li a {
+    display: inline-block;
 }

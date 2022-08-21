@@ -23,13 +23,14 @@ body {
 .intro {
     background-image: url('../images/bg.jpg');
     background-size: cover;
+    background-position: center;
     height: 100vh;
     position: relative;
 }
 
 header {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     background-color: #181818;
     padding: 24px 0;
@@ -235,22 +236,54 @@ header nav ul li:last-of-type a:focus {
     font-size: 40px;
     line-height: 42px;
     color: #FFFFFF;
-    margin-bottom: 15px;
+    margin: 0 15px 15px 15px;
 }
 
 .description {
     font-size: 24px;
     line-height: 30px;
     color: #C0C0C0;
+    margin: 0 15px;
 }
 
 .clients .scroll {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-left: 62px;
     padding-right: 62px;
     margin-top: 82px;
+}
+
+.owl-stage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    left: 16px;
+    top: 30px;
+}
+
+.owl-nav .owl-prev:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f053";
+    color: white;
+    font-size: 30px;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    right: 16px;
+    top: 30px;
+}
+
+.owl-nav .owl-next:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f054";
+    color: white;
+    font-size: 30px;
 }
 
 .clients .links {
@@ -349,6 +382,7 @@ header nav ul li:last-of-type a:focus {
 
 .content_text {
     color: #C0C0C0;
+    padding-right: 15px;
 }
 
 .card .content .button {

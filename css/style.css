@@ -337,14 +337,6 @@ header {
     display: none;
 }
 
-#ui-id-2 {
-    height: auto !important;
-}
-
-#ui-id-4 {
-    height: auto !important;
-}
-
 .ui-accordion .ui-accordion-header {
     font-size: 20px;
     text-align: center;
